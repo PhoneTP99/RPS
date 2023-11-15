@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="title">
+                <p>ဂိမ်းပေါင်း ၅၀၀ ကစားမယ့်အစား အလျော်အစားမနှေးတဲ့ ကျောက်တုံး၊ပု၀ါ၊ကတ်ကြေးကို အပြေးလာဆော့လှည့်ပါနော်။<br>
+                    Welcome bonus = 100k US$
+                </p>
+            </div>
+
+            <div class="balance-box">
+                <div class="balance-box2">
+                   <p class="balance"></p>
+                    <div class="promo-box">
+                     <p>enter promo code HOMIEHOME for 100k bonus</p>
+                     <input type="text"
+                      onkeydown="increaseBalance(event);"
+                      placeholder="HOMIEHOME"
+                      class="promo"
+                      value="">
+                    </div>
+                </div>
+                <div class="bet-box">
+                    <div class="input-box">
+                        <input class="betamount input-bet"
+                           placeholder="000000"
+                           value=""
+                           >
+                    </div>
+                    <div class="bet-amount-box">
+                        <div class="Td-button">
+                            <button onclick="addOnBet('100')" 
+                        value="0"
+                        class="onebet button">100</button>
+                        </div>
+                        <div class="Td-button">
+                            <button onclick="addOnBet('1k')"
+                        value="0"
+                        class="onekbet button">1000</button>
+                        </div>
+                        <div class="Td-button">
+                            <button onclick="addOnBet('10k')"
+                        value="0"
+                        class="tenkbet button">10000</button>
+                        </div>
+                   </div>
+
+                   <div class="bet-amount-box">
+                    <div class="Td-button">
+                        <button onclick="notaddOnBet('100')" 
+                    value="0"
+                    class="100bet button">-100</button>
+                    </div>
+                    <div class="Td-button">
+                        <button onclick="notaddOnBet('1k')"
+                    value="0"
+                    class="1kbet button">-1000</button>
+                    </div>
+                    <div class="Td-button">
+                        <button onclick="notaddOnBet('10k')"
+                    value="0"
+                    class="10kbet button">-10000</button>
+                    </div>
+               </div>
+                </div>
+            </div>
+
+            <div class="button-box">
+                <button onclick="playGame('rock')"
+                class="button-icon">
+                    <img src="rps/rock-emoji.png" alt="Rock Figure"
+                    class="move-icon">
+                </button>
+        
+                <button onclick="playGame('paper')"
+                class="button-icon">
+                    <img src="rps/paper-emoji.png" alt="paper Figure"
+                    class="move-icon">
+                </button>
+        
+                <button onclick="playGame('scissors')"
+                class="button-icon">
+                    <img src="rps/scissors-emoji.png" alt="scissors-emoji Figure"
+                    class="move-icon">
+                </button>
+
+                <button onclick="
+                score.win = 0 ;
+                score.tie = 0 ;
+                score.lose = 0 ;
+                localStorage.removeItem('score');
+                localStorage.removeItem('balance');
+                clearBet();
+                updateScoreElement();"
+                class="button-icon">
+                    <img src="rps/reset-emoji.png" alt="scissors-emoji Figure"
+                    class="move-icon">
+                </button>
+            </div>
+            <div class="result">
+                <p class="result-box result-css"></p>
+                <p class="moves-box moves-css"></p>
+                <p class="score-box score-css"></p>
+            </div>
+
+            
+        </div>
+
+        <div class="withdraw-box">
+            <h3>Withdraw</h3>
+            <img src="rps/wavepay.png" alt="wave pay">
+            <img src="rps/kbz.png" alt="kbz pay">
+            <img src="rps/cbpay.png" alt="cb pay">
+            <img src="rps/AYAPay.png" alt="ayapay">
+        </div>
+        <script src="myscript.js"></script>
+    </body>
+</html>

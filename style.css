@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb( 25, 25, 25);
+    color: yellowgreen;
+}
+
+.balance-box {
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.balance-box2 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 1dvw;
+}
+
+.promo-box {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.promo:focus {
+    outline: none;
+}
+.bet-box {
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.input-bet {
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 10px;
+    width: 100%;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.input-bet:focus {
+    outline: none;
+}
+
+.Td-button {
+    flex-grow: 1;
+    background-color: yellow;
+    border-radius: 10px;
+    margin: 0px 12px 0px 0px;
+}
+
+.Td-button:nth-child(3) {
+    margin-right: 0px;
+}
+
+.button {
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    transform: translateY(-3px);
+}
+
+.Td-button:active .button {
+    transform: translateY(0px);
+}
+
+.container {
+    padding-top: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+}
+
+.button-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+.button-icon {
+    height: 120px;
+    width: 120px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 60px;
+    margin-bottom: 30px;
+}
+
+.move-icon {
+    height: 60px;
+    margin-right: 5px;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-start;
+    color: yellowgreen;
+    flex-direction: column;
+    width: 100%;
+}
+
+.result-css , .moves-css , .score-css {
+    margin-bottom: 5px;
+}
+
+.moves-css {
+    display: flex;
+    align-items: center;
+}
+
+.null-icon {
+    height: 60px;
+    background-color: transparent;
+    margin: 0px 5px 0px 5px;
+}
+
+.bet-amount-box {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.withdraw-box {
+    position: fixed;
+    right: 0%;
+    bottom: 20%;
+    top: 0%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.withdraw-box > img {
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
